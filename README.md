@@ -1,9 +1,96 @@
-# Welcome to FPTU attendance application
-We realize that taking attendance is time-consuming and causes disruption to the teaching and learning process of students and lecturers.
-Here we propose a solution of using facial recognition application to apply for automatic attendance within the school.
-Our application will bring convenience in the process of use and will help teaching and learning become more effective.
+# Welcome to the FPTU Attendance Application
+
+Taking attendance can be time-consuming and often disrupts the teaching and learning process for both students and lecturers. To address this, we propose an automated attendance solution using facial recognition technology, aiming to streamline attendance taking within the school environment. 
+
+Our application is designed to bring convenience and efficiency, enhancing the overall effectiveness of teaching and learning.
+
+---
 
 ## 1. Application Overview
-The application is built based on matchine learning algorithms.
-Specifically, the algorithms used to build it are Haar cascade, PCA, SVM.
-These are basic matchine learning algorithms that help build a face recognition model.
+
+This application leverages **machine learning** algorithms to enable facial recognition for attendance. The key algorithms used in building this model include:
+
+- **Haar Cascade**: For face detection.
+- **PCA (Principal Component Analysis)**: For feature extraction.
+- **SVM (Support Vector Machine)**: For classification.
+
+These foundational algorithms combine to create a reliable and efficient face recognition model.
+
+---
+
+## 2. Steps to Get Started
+
+### Step 01: Clone the Repository
+
+To get started, copy the command below and paste it into your terminal to download the project files to your computer:
+
+```bash
+git clone https://github.com/dolami2876/FPTU-attendance-application-using-PCA-and-SVM.git
+
+```
+### Step 02: Data Update Instructions
+
+1. **Open the `Train_Face_With_ML` Folder**:
+   Navigate to the `Train_Face_With_ML` folder where the training scripts and resources are located.
+
+2. **Updating the Dataset**:
+   - If your data is in **video format**, place it in the following directory:
+     ```plaintext
+     data/video_data
+     ```
+   - If your data is in **image format**, place it in the following directory:
+     ```plaintext
+     data/image_data
+     ```
+
+Make sure to organize your data correctly based on its format to ensure compatibility with the training scripts.
+### Step 03: Run the Processing Scripts
+
+After updating the data into the appropriate folders, follow the steps below to process and train the model. Run each script in the specified order:
+
+1. **[crop_face]** this script crops faces from the input data to focus only on facial features.
+2. **[resize]** resize the cropped images to a standard size for consistent processing.
+3. **[eigen_face]** apply PCA (Principal Component Analysis) to extract essential facial features.
+4. **[face_ML]** train the machine learning model (SVM) with the extracted features.
+5. **[make_face]** use this script to test the trained model and print out the results before deploying it.
+
+> **Note**: Ensure that each step completes successfully before moving on to the next.
+
+Following these steps will set up your model for automatic attendance tracking.
+
+### Step 04: Model Integration
+
+Once you have successfully trained your model and completed the previous steps, you need to integrate the trained model into your Flask application for attendance tracking. Follow the instructions below:
+
+1. **Locate the Trained Model**:
+   navigate to the directory where your trained model files are stored, specifically at
+
+   ```plaintext
+   Flask_App - attemtion\Train_Face_With_ML\model
+    ```
+2. **Copy the Model Files**:
+copy the entire contents of the model folder that contains your trained model files.
+3. **Paste into the Application Directory**:
+    paste the copied files into the following directory within your Flask application
+   ```plaintext
+   Flask_App - attemtion\model
+   ```
+### Step 05: Start the Face Recognition Application
+
+Now that you have integrated your model into the Flask application, you can run the application to start the face recognition process. To do this, follow the instructions below.
+
+1. **Navigate to the Application Directory**:
+   Open your terminal or command prompt and navigate to the directory where your Flask application is located:
+
+   ```bash
+   cd Flask_App - attemtion
+   ```
+ 2. **Run the Application: Execute the following command to start the application**:
+   ```bash
+   python mean.py
+   ```
+This command will launch your face recognition application. You should see the application interface open, allowing you to use the facial recognition features for attendance tracking.
+> **Note**: ensure that all necessary dependencies are installed and that your environment is properly set up for the application to run smoothly.
+
+With these steps completed, you are now ready to utilize the automated attendance system using facial recognition technology.
+
