@@ -93,4 +93,31 @@ Now that you have integrated your model into the Flask application, you can run 
    > **Note**: ensure that all necessary dependencies are installed and that your environment is properly set up for the application to run smoothly.
    
    With these steps completed, you are now ready to utilize the automated attendance system using facial recognition technology.
+   
+## 3. Application Interface
 
+After you successfully run the application, the following interface will appear:
+
+![Giao diện Ứng dụng](static/upload/img4.png)
+
+On the main interface, you will find two main buttons on the taskbar: **Home** and **App**.
+- **Home** - This button takes you back to the main dashboard of the app. Here we will describe why we created this app.
+- **App** - when you press this button you will be redirected to the user manual page, how it works as the picture below.
+  
+![Giao diện Ứng dụng](static/upload/img3.png)
+
+After you click on the **Face Recognition App** button, you will be redirected to the page with the task used for attendance.
+
+![Giao diện Ứng dụng](static/upload/img2.png)
+
+On this page, you will find the following features:
+- **Live Camera Feed**: the application will access your camera to capture live video for facial recognition.
+- **Attendance Status**: a list displaying the names of recognized individuals, along with their attendance status.
+
+![Giao diện Ứng dụng](static/upload/img1.png)
+
+When you click on the **Start Camera** button, the application will open the camera and start recognizing your face and send information about whether you have checked in or not to the system as a Json file.
+
+![Giao diện Ứng dụng](static/upload/img0.png)
+
+# Thank you for your interest in our project!
