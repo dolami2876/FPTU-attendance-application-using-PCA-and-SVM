@@ -80,7 +80,7 @@ copy the entire contents of the model folder that contains your trained model fi
 Now that you have integrated your model into the Flask application, you can run the application to start the face recognition process. To do this, follow the instructions below.
 
 1. **Navigate to the Application Directory**:
-   Open your terminal or command prompt and navigate to the directory where your Flask application is located:
+   open your terminal or command prompt and navigate to the directory where your Flask application is located
 
    ```bash
    cd Flask_App - attemtion
@@ -89,7 +89,7 @@ Now that you have integrated your model into the Flask application, you can run 
    ```bash
    python mean.py
    ```
-   This command will launch your face recognition application. You should see the application interface open, allowing you to use the facial recognition features for attendance tracking.
+   this command will launch your face recognition application. You should see the application interface open, allowing you to use the facial recognition features for attendance tracking.
    > **Note**: ensure that all necessary dependencies are installed and that your environment is properly set up for the application to run smoothly.
    
    With these steps completed, you are now ready to utilize the automated attendance system using facial recognition technology.
