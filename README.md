@@ -6,7 +6,7 @@ Our application is designed to bring convenience and efficiency, enhancing the o
 
 ---
 
-## 1. Application Overview
+## I. Application Overview
 
 This application leverages **machine learning** algorithms to enable facial recognition for attendance. The key algorithms used in building this model include:
 
@@ -18,7 +18,7 @@ These foundational algorithms combine to create a reliable and efficient face re
 
 ---
 
-## 2. Steps to Get Started
+## II. Steps to Get Started
 
 ### Step 01: Clone the Repository
 
@@ -94,7 +94,7 @@ Now that you have integrated your model into the Flask application, you can run 
    
    With these steps completed, you are now ready to utilize the automated attendance system using facial recognition technology.
    
-## 3. Application Interface
+## III. Application Interface
 
 After you successfully run the application, the following interface will appear:
 
